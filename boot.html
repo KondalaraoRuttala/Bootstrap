@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Bootstrap Page - Canva Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .hero-section {
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+        
+        .feature-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+        
+        .btn-custom {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border: none;
+            border-radius: 25px;
+            padding: 12px 30px;
+            font-weight: 600;
+            color: white;
+        }
+        
+        .btn-custom:hover {
+            background: linear-gradient(45deg, #5a6fd8, #6a4190);
+            color: white;
+        }
+        
+        .stats-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin: 60px 0;
+            padding: 50px;
+            color: white;
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        .content-section {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin: 40px 0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .footer {
+            background: rgba(0,0,0,0.2);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-code me-2"></i>My Website
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4">Bootstrap Design</h1>
+                    <p class="lead mb-5">Clean, responsive, and beautiful static HTML with Bootstrap 5 components and custom styling.</p>
+                    <a href="#features" class="btn btn-custom btn-lg me-3">
+                        <i class="fas fa-arrow-down me-2"></i>Explore Features
+                    </a>
+                    <a href="#about" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-info-circle me-2"></i>Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-white">Key Features</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fas fa-mobile-alt feature-icon"></i>
+                            <h5 class="card-title">Responsive Grid</h5>
+                            <p class="card-text">Bootstrap's powerful grid system ensures perfect layout on all devices and screen sizes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fas fa-palette feature-icon"></i>
+                            <h5 class="card-title">Custom Styling</h5>
+                            <p class="card-text">Beautiful gradients and modern design elements enhance the default Bootstrap components.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fas fa-rocket feature-icon"></i>
+                            <h5 class="card-title">Fast Loading</h5>
+                            <p class="card-text">Static HTML loads instantly with no JavaScript dependencies for core functionality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fas fa-shield-alt feature-icon"></i>
+                            <h5 class="card-title">Reliable</h5>
+                            <p class="card-text">No complex scripts means fewer points of failure and consistent performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fas fa-search feature-icon"></i>
+                            <h5 class="card-title">SEO Friendly</h5>
+                            <p class="card-text">Static content is easily crawled and indexed by search engines for better visibility.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card text-center p-4">
+                        <div class="card-body">
+                            <i class="fas fa-cogs feature-icon"></i>
+                            <h5 class="card-title">Easy to Maintain</h5>
+                            <p class="card-text">Simple HTML structure makes updates and modifications straightforward and quick.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="content-section">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="row g-4">
+                            <div class="col-md-4 text-center">
+                                <div class="p-3">
+                                    <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                                    <h5>Email</h5>
+                                    <p class="text-muted">kondalaraoruttala1999@example.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="p-3">
+                                    <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                                    <h5>Phone</h5>
+                                    <p class="text-muted">7997928994</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="p-3">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                                    <h5>Location</h5>
+                                    <p class="text-muted">Narsipatnam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="mailto:hello@example.com" class="btn btn-custom btn-lg">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; kondalaraoruttala1999@gmail.com</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (only for navbar toggle on mobile) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'980f1dc9142a7ef5',t:'MTc1ODE4MDM5OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
